@@ -15,8 +15,8 @@ public class CalculateTotalValueFromSymbols {
 
 
 //    Takes list of InterGalactic Symbols and returns Credits based on imposed Rules
-    public int calculate(List<String> symbols){
-        int sum = 0;
+    public double calculate(List<String> symbols){
+        double sum = 0;
         int value = 0;
         int nextValue = 0;
 

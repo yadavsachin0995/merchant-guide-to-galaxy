@@ -7,9 +7,9 @@ import java.util.List;
 // method.
 public class QueryResponseGenerator {
 
-    CalculateTotalValueFromSymbols calculateTotalValueFromSymbols = new CalculateTotalValueFromSymbols();
-    GenerateSymbolConcat generate = new GenerateSymbolConcat();
-    GetPerUnitPriceOfMetal getPerUnitPriceOfMetal = new GetPerUnitPriceOfMetal();
+    private CalculateTotalValueFromSymbols calculateTotalValueFromSymbols = new CalculateTotalValueFromSymbols();
+    private GenerateSymbolConcat generate = new GenerateSymbolConcat();
+    private CalculatePerUnitPriceOfMetal calculatePerUnitPriceOfMetal = new CalculatePerUnitPriceOfMetal();
 
 //    Saves input line information to an intermediate map having "Symbol" --> "Roman" information
     public boolean saveSymbolInformation(String line){
@@ -43,7 +43,7 @@ public class QueryResponseGenerator {
 
         double perUnitPrice;
         double priceFromInputLine = Integer.parseInt(creditOnly);
-        int symbolsSum = calculateTotalValueFromSymbols.calculate(symbols);
+        double symbolsSum = calculateTotalValueFromSymbols.calculate(symbols);
         if (symbolsSum > 0)
             perUnitPrice = priceFromInputLine / symbolsSum;
         else
@@ -78,7 +78,7 @@ public class QueryResponseGenerator {
         }
 
         double metalPriceForQuantity = calculateTotalValueFromSymbols.calculate(symbols)
-                * getPerUnitPriceOfMetal.costOfMetal(metalName);
+                * calculatePerUnitPriceOfMetal.costOfMetal(metalName);
         String concatenatedSymbols = generate.generateConcat(symbols);
         return concatenatedSymbols.concat(" " + metalName.concat(" is " + metalPriceForQuantity + " Credits"));
     }
