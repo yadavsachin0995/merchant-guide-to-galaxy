@@ -5,9 +5,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class GetPerUnitPriceOfMetalTest {
+public class CalculatePerUnitPriceOfMetalTest {
 
-    private GetPerUnitPriceOfMetal getPrice = new GetPerUnitPriceOfMetal();
+    private CalculatePerUnitPriceOfMetal getPrice = new CalculatePerUnitPriceOfMetal();
 
     @Before
     public void setup(){

@@ -31,7 +31,7 @@ public class QueryResponseGeneratorTest {
 
     @Test
     public void processHowMuch() {
-        assertEquals("bro is 5 Credits", queryResponse.processHowMuch("how much is bro ?"));
+        assertEquals("bro is 5.0 Credits", queryResponse.processHowMuch("how much is bro ?"));
     }
 
     @Test

@@ -27,7 +27,7 @@ public class CalculateTotalValueFromSymbolsTest {
         testList.add("glob");
         testList.add("glob");
         testList.add("habibi");
-        assertEquals(300, calculate.calculate(testList));
+        assertEquals(300, calculate.calculate(testList), .5);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class CalculateTotalValueFromSymbolsTest {
         testList.add("glob");
         testList.add("prok");
         testList.add("habibi");
-        assertEquals(400, calculate.calculate(testList));
+        assertEquals(400, calculate.calculate(testList), .5);
     }
 
     @Test
@@ -47,6 +47,6 @@ public class CalculateTotalValueFromSymbolsTest {
         testList.add("habibi");
         testList.add("prok");
         testList.add("glob");
-        assertEquals(600, calculate.calculate(testList));
+        assertEquals(600, calculate.calculate(testList), .5);
     }
 }
