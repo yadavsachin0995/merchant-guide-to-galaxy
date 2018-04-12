@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Defines method to calculate the Credit values from the list of Symbols
-public class CalculateTotalValueFromSymbols {
+public class SymbolsToValueRepresentation {
 
 //    Defines an ArrayList that contains the Roman Symbols which can not be subtracted from
 //    other Symbols

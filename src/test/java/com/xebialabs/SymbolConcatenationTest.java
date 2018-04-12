@@ -7,9 +7,9 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class GenerateSymbolConcatTest {
+public class SymbolConcatenationTest {
 
-    private GenerateSymbolConcat generator = new GenerateSymbolConcat();
+    private SymbolConcatenation generator = new SymbolConcatenation();
 
     @Test
     public void generateConcat() {

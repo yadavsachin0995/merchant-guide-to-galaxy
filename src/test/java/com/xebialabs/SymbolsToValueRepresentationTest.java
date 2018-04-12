@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class CalculateTotalValueFromSymbolsTest {
+public class SymbolsToValueRepresentationTest {
 
     @Before
     public void setup(){
@@ -22,7 +22,7 @@ public class CalculateTotalValueFromSymbolsTest {
 
     @Test
     public void calculateWhenValuesRepeatConsecutively() {
-        CalculateTotalValueFromSymbols calculate = new CalculateTotalValueFromSymbols();
+        SymbolsToValueRepresentation calculate = new SymbolsToValueRepresentation();
         List<String> testList = new ArrayList<>();
         testList.add("glob");
         testList.add("glob");
@@ -32,7 +32,7 @@ public class CalculateTotalValueFromSymbolsTest {
 
     @Test
     public void calculateWhenValuesAreInIncreasingOrder() {
-        CalculateTotalValueFromSymbols calculate = new CalculateTotalValueFromSymbols();
+        SymbolsToValueRepresentation calculate = new SymbolsToValueRepresentation();
         List<String> testList = new ArrayList<>();
         testList.add("glob");
         testList.add("prok");
@@ -42,7 +42,7 @@ public class CalculateTotalValueFromSymbolsTest {
 
     @Test
     public void calculateWhenValuesAreInDecreasingOrder() {
-        CalculateTotalValueFromSymbols calculate = new CalculateTotalValueFromSymbols();
+        SymbolsToValueRepresentation calculate = new SymbolsToValueRepresentation();
         List<String> testList = new ArrayList<>();
         testList.add("habibi");
         testList.add("prok");

@@ -7,9 +7,9 @@ import java.util.List;
 // method.
 public class QueryResponseGenerator {
 
-    private CalculateTotalValueFromSymbols calculateTotalValueFromSymbols = new CalculateTotalValueFromSymbols();
-    private GenerateSymbolConcat generate = new GenerateSymbolConcat();
-    private CalculatePerUnitPriceOfMetal calculatePerUnitPriceOfMetal = new CalculatePerUnitPriceOfMetal();
+    private SymbolsToValueRepresentation symbolsToValueRepresentation = new SymbolsToValueRepresentation();
+    private SymbolConcatenation generate = new SymbolConcatenation();
+    private PerUnitPriceOfMetal perUnitPriceOfMetal = new PerUnitPriceOfMetal();
 
 //    Saves input line information to an intermediate map having "Symbol" --> "Roman" information
     public boolean saveSymbolInformation(String line){
@@ -43,7 +43,7 @@ public class QueryResponseGenerator {
 
         double perUnitPrice;
         double priceFromInputLine = Integer.parseInt(creditOnly);
-        double symbolsSum = calculateTotalValueFromSymbols.calculate(symbols);
+        double symbolsSum = symbolsToValueRepresentation.calculate(symbols);
         if (symbolsSum > 0)
             perUnitPrice = priceFromInputLine / symbolsSum;
         else
@@ -62,7 +62,7 @@ public class QueryResponseGenerator {
                 symbols.add(word.trim());
         }
 
-        return generate.generateConcat(symbols).concat(" is " + calculateTotalValueFromSymbols.calculate(symbols) + " Credits");
+        return generate.generateConcat(symbols).concat(" is " + symbolsToValueRepresentation.calculate(symbols) + " Credits");
     }
 
 //    Returns calculated Credits for a particular quantity of metal
@@ -77,8 +77,8 @@ public class QueryResponseGenerator {
                 metalName = word.trim();
         }
 
-        double metalPriceForQuantity = calculateTotalValueFromSymbols.calculate(symbols)
-                * calculatePerUnitPriceOfMetal.costOfMetal(metalName);
+        double metalPriceForQuantity = symbolsToValueRepresentation.calculate(symbols)
+                * perUnitPriceOfMetal.costOfMetal(metalName);
         String concatenatedSymbols = generate.generateConcat(symbols);
         return concatenatedSymbols.concat(" " + metalName.concat(" is " + metalPriceForQuantity + " Credits"));
     }

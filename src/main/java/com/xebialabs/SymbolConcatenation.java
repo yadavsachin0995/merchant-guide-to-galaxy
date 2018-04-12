@@ -4,7 +4,7 @@ import java.util.List;
 
 
 // Defines a method to concatenate a list of symbols
-public class GenerateSymbolConcat {
+public class SymbolConcatenation {
 
     public String generateConcat(List<String> symbols){
         String symbolConcat = "";

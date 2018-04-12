@@ -4,7 +4,7 @@ package com.xebialabs;
 * returns it's per unit price from the Repository named perUnitStore
 * */
 
-public class CalculatePerUnitPriceOfMetal {
+public class PerUnitPriceOfMetal {
 
 //    Takes a string and searches for it's value in the Hashmap named perUnitStore
     public Double costOfMetal(String metalName) {
