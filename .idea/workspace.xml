@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38fcb705-0189-4b41-a53b-c6e5994f26ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xebialabs/CalculatePerUnitPriceOfMetal.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebialabs/PerUnitPriceOfMetal.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xebialabs/CalculateTotalValueFromSymbols.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebialabs/SymbolsToValueRepresentation.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xebialabs/GenerateSymbolConcat.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebialabs/SymbolConcatenation.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xebialabs/QueryResponseGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebialabs/QueryResponseGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xebialabs/Repository.java" afterPath="$PROJECT_DIR$/src/main/java/com/xebialabs/Repository.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xebialabs/CalculatePerUnitPriceOfMetalTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebialabs/PerUnitPriceOfMetalTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xebialabs/CalculateTotalValueFromSymbolsTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebialabs/SymbolsToValueRepresentationTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xebialabs/GenerateSymbolConcatTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xebialabs/SymbolConcatenationTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -201,7 +193,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="75" />
     <option name="y" value="6" />
     <option name="width" value="1281" />
@@ -564,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523449291849</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;renamed classes&quot;">
+      <created>1523507743208</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523507743208</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -600,7 +599,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="6" width="1303" height="780" extended-state="6" />
+    <frame x="75" y="6" width="1303" height="780" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -641,7 +641,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;changed access specifiers&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;changed access specifiers&quot;" />
+    <MESSAGE value="&quot;renamed classes&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;renamed classes&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
